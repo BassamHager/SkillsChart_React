@@ -5,7 +5,7 @@ import MODULES from "../modules";
  *
  * dataSet - this needs to be an array of numbers of the same length as the MODULES array (7)
  */
-const exampleData = [10, 9, 7, 5, 8, 6, 10];
+// const exampleData = [10, 9, 7, 5, 8, 6, 10];
 
 export const getRadarChartUrl = (dataSet) => {
   if (!Array.isArray(dataSet)) {
@@ -56,4 +56,3 @@ export const getBarChartUrl = (dataSet) => {
 
   return `https://quickchart.io/chart?c=${JSON.stringify(chartObject)}`;
 };
-
