@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Button = (props) => {
@@ -8,7 +7,7 @@ const Button = (props) => {
   if (props.to) {
     return (
       <Link to={props.to} exact={props.exact}>
-        {props.btnTxt}
+        <button> {props.btnTxt} </button>
       </Link>
     );
   }

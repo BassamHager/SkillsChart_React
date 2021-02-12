@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 // context
 import { AppContext } from "../context/AppContext";
 // util
@@ -8,7 +8,7 @@ import SkillsInputs from "../components/SkillsInputs";
 
 const Bar = () => {
   const { inputs } = useContext(AppContext);
-  
+
   return (
     <div className="app-container">
       <SkillsInputs />
